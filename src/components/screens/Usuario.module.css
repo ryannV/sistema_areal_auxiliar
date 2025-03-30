@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+}
+
+.container_second{
+    margin: 0 auto;
+    display: flex;
+    width: 40%;
+    margin-top: 1em;
+}
+
+.flex{
+    display: flex;
+}
+
+form div div label input[type="radio"]{
+    margin: 0.5em 0.5em 0 0;
+}
+
+.botao{
+    display: flex;
+    margin-top: 1em;
+    gap: 5px;
+}

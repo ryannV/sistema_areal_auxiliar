@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+}
+
+.container_second{
+    width: 40%; 
+    margin: 0 auto;
+    margin-top: 10em;
+}
+
+.botao{
+    display: flex;
+    margin-top: 1em;
+    gap: 8px;
+}
