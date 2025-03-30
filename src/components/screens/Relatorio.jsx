@@ -4,10 +4,18 @@ import Titulo from "../reply/Titulo";
 import styles from './Relatorio.module.css';
 
 const Relatorio = () => {
-    const [selectedMaquinario, setSelectedMaquinario] = useState(null);
-    const [selectedTipo, setSelectedTipo] = useState(null);
-    const [selectedQtd, setSelectedQtd] = useState(null);
-    const [selectedData, setSelectedData] = useState(null);
+    const [selectedMaquinario, setSelectedMaquinario] = useState("");
+    const [selectedTipo, setSelectedTipo] = useState("");
+    const [selectedQtd, setSelectedQtd] = useState("");
+    const [selectedData, setSelectedData] = useState("");
+
+    const clearOptions = () => {
+        setSelectedMaquinario("");
+        setSelectedTipo("");
+        setSelectedQtd("");
+        setSelectedData("");
+        console.log('fui clicado');
+    }
 
     return (
         <div>
@@ -54,6 +62,11 @@ const Relatorio = () => {
                             </select>
                         </div>
                     </section>
+
+                    <div className={styles.flex}>
+                        <button onClick={clearOptions}>Limpar Seleção</button>
+                        <button>Gerar</button>
+                    </div>
                 </main>
             </section>
         </div>

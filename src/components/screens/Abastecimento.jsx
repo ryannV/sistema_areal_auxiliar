@@ -30,8 +30,8 @@ const Abastecimento = () => {
           </div>
 
           <div className={styles.boxes}>
-            <label htmlFor="">Quantidade</label>
-            <input type="number" />
+            <label htmlFor="qtd">Quantidade</label>
+            <input className={styles.inputQtd} type="number" id="qtd"/>
 
             <button className={styles.botao}>Confirmar</button>
           </div>

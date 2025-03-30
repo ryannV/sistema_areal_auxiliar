@@ -14,12 +14,12 @@ const Login = () => {
 
         <div className={styles.campos}>
           <img src={user} alt="user" className={styles.icons}/>
-          <input type="text" placeholder="Digite seu Usuário" />
+          <input className={styles.input} type="text" placeholder="Digite seu Usuário" />
         </div>
 
         <div className={styles.campos}>
           <img src={lock} alt="lock" className={styles.icons}/>
-          <input type="password" placeholder="Digite sua Senha" />
+          <input className={styles.input} type="password" placeholder="Digite sua Senha" />
         </div>
 
         <div className={styles.submit}>
