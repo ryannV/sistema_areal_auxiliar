@@ -23,6 +23,8 @@ const Menu = () => {
       setSelected("Maquinario");
     } else if (location.pathname === "/Relatorio") {
       setSelected("Relatorio");
+    } else if (location.pathname === "/Fornecedor") {
+      setSelected("Fornecedor");
     }
   }, [location.pathname]);
 
@@ -54,6 +56,10 @@ const Menu = () => {
           <li onClick={() => handleNavigation('/Maquinario')}
             className={selected === "Maquinario" ? styles.selected : ""}>
             Maquinário
+          </li>
+          <li onClick={() => handleNavigation('/Fornecedor')}
+            className={selected === "Fornecedor" ? styles.selected : ""}>
+            Fornecedor
           </li>
           <li onClick={() => navigate('/')}>
             <img src={logout} alt="logout" /></li>

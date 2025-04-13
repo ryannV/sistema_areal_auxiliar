@@ -19,7 +19,7 @@ const Abastecimento = () => {
         <main className={styles.container_second}>
           <div className={styles.boxes}>
             <label htmlFor="comboBox">Maquinário</label>
-            <select id="comboBox" value={selectedOption} onChange={handleChange}>
+            <select className={styles.inputs} id="comboBox" value={selectedOption} onChange={handleChange}>
               <option value="">Selecione</option>
               <option value="opcao1">Opção 1</option>
               <option value="opcao2">Opção 2</option>
@@ -31,7 +31,7 @@ const Abastecimento = () => {
 
           <div className={styles.boxes}>
             <label htmlFor="qtd">Quantidade</label>
-            <input className={styles.inputQtd} type="number" id="qtd"/>
+            <input className={styles.inputs} type="number" id="qtd"/>
 
             <button className={styles.botao}>Confirmar</button>
           </div>

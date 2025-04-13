@@ -1,32 +1,28 @@
-.container{
+.container {
     display: flex;
+    height: 100vh; /* Ocupa 100% da altura da tela */
 }
 
-.container_second{
-    align-items: center;
-    margin: 0 auto;
+.container_second {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
     display: flex;
-    border: 2px solid #1a4f77;
-    border-radius: 10px;
-    height: 50%;
-    position: absolute;
-    top: 30%;
-    left: 27%;
 }
 
 .boxes{
     display: flex;
     flex-direction: column;
-    padding: 50px 100px;
+    padding: 50px 80px;
     user-select: none;
 }
 
-select{
-    width: 200px;
-    margin-top: 3%;
-}
-
-.inputQtd {
+.inputs {
     border: 2px solid #ccc;
     border-radius: 5px;
     outline: none;
@@ -36,7 +32,7 @@ select{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.inputQtd:focus {
+.inputs:focus {
     color: #1a4f77;
     border-color: #1a4f77;
     box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
